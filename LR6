@@ -1,0 +1,204 @@
+#include <iostream> //подключение библиотек
+
+#include <math.h>
+
+using namespace std;
+
+int main() //точка входа в программу
+
+{ //задание1
+
+/*setlocale(LC_ALL, "Russian");
+
+int A, B, C;
+
+cout << "Введите значение переменной А: ";
+
+cin >> A;
+
+cout << "Введите значение переменной B: ";
+
+cin >> B;
+
+C = A;
+
+A = B;
+
+B = C;
+
+cout << "Новое значение переменной А: " << A << endl;
+
+cout << "Новое значение переменной B: " << B << endl;
+
+system("pause");
+
+return 0;
+}*/
+
+
+//задание 2
+
+/*setlocale(LC_ALL, "Russian");
+
+int A, B, C, x, y;
+
+cout << "Введите значение переменной А: ";
+
+cin >> A;
+
+cout << "Введите значение переменной B: ";
+
+cin >> B;
+
+cout << "Введите значение переменной C: ";
+
+cin >> C;
+
+x = A;
+
+y = B;
+
+A = C;
+
+B = x;
+
+C = y;
+
+cout << "Новое значение переменной А: " << A << endl;
+
+cout << "Новое значение переменной B: " << B << endl;
+
+cout << "Новое значение переменной C: " << C << endl;
+
+system("pause");
+
+return 0;*/
+
+
+
+//задание 3
+
+/*setlocale(LC_ALL, "Russian");
+
+int A, B, C, x, y;
+
+cout << "Введите значение переменной А: ";
+
+cin >> A;
+
+cout << "Введите значение переменной B: ";
+
+cin >> B;
+
+cout << "Введите значение переменной C: ";
+
+cin >> C;
+
+x = C;
+
+y = A;
+
+A = B;
+
+B = x;
+
+C = y;
+
+cout << "Новое значение переменной А: " << A << endl;
+
+cout << "Новое значение переменной B: " << B << endl;
+
+cout << "Новое значение переменной C: " << C << endl;
+
+system("pause");
+
+return 0;*/
+
+
+
+//задание 4
+
+/*setlocale(LC_ALL, "Russian");
+
+int x, y;
+
+cout << "Введите значение x:";
+
+cin >> x;
+
+y = 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
+
+cout << "Результат = " << y << endl;
+
+system("pause");
+
+return 0;*/
+
+
+//задание 5
+
+/*setlocale(LC_ALL, "Russian");
+
+int x, y, z;
+
+cout << "Введите значение x:";
+
+cin >> x;
+
+z = x - 3;
+
+y = 4 * pow(z, 6) - 7 * pow(z, 3) + 2;
+
+cout << "Результат = " << y << endl;
+
+system("pause");
+
+return 0;*/
+
+
+
+//задание 6
+
+/*setlocale(LC_ALL, "Russian");
+
+int A, x, res;
+
+cout << "Введите значение переменной А: ";
+
+cin >> A;
+
+x = pow(A, 2);
+
+res = x * x * x * x;
+
+cout << "А в 8 степени = " << res << endl;
+
+system("pause");
+
+return 0;*/
+
+
+//задание 7
+
+/*setlocale(LC_ALL, "Russian");
+
+int A, x, y, res;
+
+cout << "Введите значение переменной А: ";
+
+cin >> A;
+
+x = pow(A, 2);
+
+y = pow(A, 3);
+
+res = x * x * x * y * y * y;
+
+cout << "А в 15 степени = " << res << endl;
+
+system("pause");
+
+return 0;
+
+
+}
