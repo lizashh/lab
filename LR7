@@ -1,0 +1,178 @@
+#include <iostream> //подключение библиотек
+
+#include <math.h>
+
+using namespace std;
+
+int main() //точка входа в программу
+
+{
+
+//task1
+
+/*setlocale(LC_ALL, "Russian");
+
+float pi = 3.14, a, b;
+
+cout << "Введите значение угла от 0 до 360 градусов :";
+
+cin >> a;
+
+b = a * pi / 180;
+
+cout << "Значение угла в радианах равно :" << b << endl;
+
+system("pause");
+
+return 0;*/
+
+
+//task2
+
+/*setlocale(LC_ALL, "Russian");
+
+float pi = 3.14, a, b;
+
+cout << "Введите значение угла в радианах 0 < a < 2*pi:";
+
+cin >> a;
+
+b = a * 180 / pi;
+
+cout << "Значение угла в градусах :" << b << endl;
+
+system("pause");
+
+return 0;*/
+
+
+//task3
+
+/*setlocale(LC_ALL, "Russian");
+
+float x, a, y, b;
+
+cout << "Введите массу(x) конфет в кг: ";
+
+cin >> x;
+
+cout << "Введите цену конфет за х кг: ";
+
+cin >> a;
+
+a = a / x;
+
+cout << "Введите новую массу(y) конфет: ";
+
+cin >> y;
+
+b = y * a;
+
+cout << "Цена конфет за 1 кг: " << a << endl;
+
+cout << "Цена конфет за у кг: " << b << endl;
+
+system("pause");
+
+return 0;*/
+
+
+//task4
+
+/*setlocale(LC_ALL, "Russian");
+
+int V1, V2, S, t, res;
+
+cout << "Скорость первого автомобиля: ";
+
+cin >> V1;
+
+cout << "Скорость второго автомобиля: ";
+
+cin >> V2;
+
+cout << "Начально расстояние между автомобилями: ";
+
+cin >> S;
+
+cout << "Количество часов, в которые автомобили двигались: ";
+
+cin >> t;
+
+res =  S + (V2 + V1) * t ;
+
+cout << "Расстояние между автомобилями за t часов: " << res << endl;
+
+system("pause");
+
+return 0;*/
+
+
+//task5
+
+/*setlocale(LC_ALL, "Russian");
+
+float a, b, x;
+
+cout << "Введите значение а: ";
+
+cin >> a;
+
+cout << "Введите значение b: ";
+
+cin >> b;
+
+while (a == 0)
+
+{
+
+cout << "а не равно 0!" << endl;
+
+cout << "Введите значение а: ";
+
+cin >> a;
+
+}
+
+x = -(b / a);
+
+cout << "Решение уравнения: x = " << x << endl;
+
+system("pause");
+
+return 0;*/
+
+
+//task6
+setlocale(LC_ALL, "Russian");
+int a1, a2, b1, b2, c1, c2;
+cout << "a1=";
+cin >> a1;
+cout << "b1=";
+cin >> b1;
+cout << "c1=";
+cin >> c1;
+cout << "a2=";
+cin >> a2;
+cout << "b2=";
+cin >> b2;
+cout << "c2=";
+cin >> c2;
+
+
+
+int delta = (a1 * b2) - (b1 * a2);
+
+int deltaX = (c1 * b2) - (b1 * c2);
+
+int deltaY = (a1 * c2) - (c1 * a2);
+
+float x = (float)deltaX / delta;
+
+float y = (float)deltaY / delta;
+
+cout << "X = " << x << endl;
+
+cout << "Y = " << y << endl;
+
+}
