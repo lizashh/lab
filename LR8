@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+
+/*int main() {
+	setlocale(LC_ALL, "Russian");
+	int a, b;
+	cout << "Количество Байт: ";
+	cin >> a;
+
+	b = a / 1024;
+	cout << "Килобайт: " << b;;
+}*/
+
+/*int main() {
+	setlocale(LC_ALL, "Russian");
+	int a, b, c;
+	cout << "Длина отрезка А: ";
+	cin >> a;
+	cout << "Длина отрезка B: " ;
+	cin >> b;
+	c = a / b;
+	cout << "Количество отрезков В , размещенных на отрезке A: " << c;
+
+}*/
+
+/*int main() {
+	setlocale(LC_ALL, "Russian");
+	int a, b, c;
+	cout << "Длина отрезка А: ";
+	cin >> a;
+	cout << "Длина отрезка В: ";
+	cin >> b;
+	c = a % b;
+	cout << "Длинa незанятой части отрезка A: " << c;
+
+}*/
+
+/*int main() {
+	setlocale(LC_ALL, "Russian");
+	int ab, ba;
+	cout << "Введите двузначное число: ";
+	cin >> ab;
+	ba = ab / 10 + ab % 10 * 10;
+	cout << "Число при перестановке цифр: " << ba << endl;
+	return 0;
+}*/
+
+/*int main() {
+	setlocale(LC_ALL, "Russian");
+	int abc, bca;
+	cout << "Введите трехзначное число: ";
+	cin >> abc;
+	cout << endl;
+	bca = (abc % 100 / 10 * 100) + (abc % 10) * 10 + abc / 100;
+	cout << "Полученное число: " << bca;
+
+}*/
