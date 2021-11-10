@@ -1,0 +1,117 @@
+#include <iostream>
+using namespace std;
+
+/*int main() {
+	setlocale(LC_ALL, "Russian");
+	int A, B;
+	cout << "Введите значение A: ";
+	cin >> A;
+	cout << "Введите значение B: ";
+	cin >> B;
+
+	if (A > 2 && B <= 3) {
+		cout << "Истинa";
+	}
+	else {
+		cout << "Ложь";
+	}
+}*/
+
+/*int main() {
+	setlocale(LC_ALL, "Russian");
+	int A, B, C;
+	cout << "Введите значение A: ";
+	cin >> A;
+	cout << "Введите значение B: ";
+	cin >> B;
+	cout << "Введите значение С: ";
+	cin >> C;
+
+	if (A < B && B < C) {
+		cout << "Истинa";
+	}
+	else {
+		cout << "Ложь";
+	}
+}*/
+
+/*int main() {
+	setlocale(LC_ALL, "Russian");
+	int A;
+	cout << "Введите 2хзначное число: ";
+	cin >> A;
+	if (A % 2 == 0 && A > 9 && A < 100) {
+		cout << "Истинa";
+    }
+	else {
+		cout << "Ложь";
+	}
+}*/
+
+/*int main() {
+	setlocale(LC_ALL, "Russian");
+	int A, a, b, c;
+	cout << "Введите 3хзначное число: ";
+	cin >> A;
+	a = A / 100;
+	b = A % 100 / 10;
+	c = A % 10;
+
+
+	if (a > b && b > c || a < b && b < c) {
+		cout << "Истинa";
+	}
+	else {
+		cout << "Ложь";
+	}
+
+}*/
+
+/*int main() {
+	setlocale(LC_ALL, "Russian");
+	int A;
+	cout << "Введите 4хзначное число: ";
+	cin >> A;
+	if (A % 10 == A / 1000 & A % 100 / 10 == A % 1000 / 100) {
+		cout << "Истина";
+	}
+	else {
+		cout << "Ложь";
+	}
+}*/
+
+/*int main() {
+	setlocale(LC_ALL, "Russian");
+	int a, b, c;
+	cout << "Введите значение стороны A: ";
+	cin >> a;
+	cout << "Введите значение стороны B: ";
+	cin >> b;
+    cout << "Введите значение стороны C: ";
+	cin >> c;
+	if ((a * a == b * b + c * c) | (b * b == a * a + c * c) | (c * c == a * a + b * b)) {
+		cout << "Треугольник прямоугольный";
+	}
+	else {
+		cout << "Треугольник не прямоугольный";
+	}
+}*/
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+
+	int a, b, c;
+	cout << "Введите значение стороны A: ";
+	cin >> a;
+	cout << "Введите значение стороны B: ";
+	cin >> b;
+	cout << "Введите значение стороны C: ";
+	cin >> c;
+
+	if ((a + b) > c && (a + c) > b && (b + c) > a) {
+		cout << "Существует";
+	}
+	else {
+		cout << "Не существует";
+	}
+}
