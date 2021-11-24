@@ -1,0 +1,139 @@
+#include <iostream>
+using namespace std;
+/*int main() {
+{   //задание 1
+	setlocale(LC_ALL, "Russian");
+	int a, b;
+	cout << "Введите значение A: ";
+	cin >> a;
+	cout << "Введите значение B: ";
+	cin >> b;
+	if (a != b) {
+		if (a > b)
+			b = a;
+		else a = b;
+	}
+	else a = b = 0;
+	cout << "A = " << a << endl;
+	cout << "B = " << b << endl;
+}*/
+	
+
+/*int main() {
+	//задание 2
+	setlocale(LC_ALL, "Russian");
+	int a, b, c;
+	cout << "Введите 1 число: ";
+	cin >> a;
+	cout << "Введите 2 число: ";
+	cin >> b;
+	cout << "Введите 3 число: ";
+	cin >> c;
+	if (b <= c && b <= a) {
+		cout << "Сумма двух наибольших чисел: " << a + c;
+	}
+	else {
+		if (a <= c && a <= b) {
+			cout << "Сумма двух наибольших чисел: " << b + c;
+		}
+		else {
+			cout << "Сумма двух наибольших чисел: " << b + a;
+		}
+	}
+}*/
+
+/*int main() {
+	//задание 3
+	setlocale(LC_ALL, "Russian");
+	double a1, a2, b1, b2, c1, c2, ab, ac, B1, B2, C1, C2;
+	cout << "Введите 1-ую координату  точки А: ";
+	cin >> a1;
+	cout << "Введите 2-ую координату  точки A: ";
+	cin >> a2;
+	cout << "Введите 1-ую координату  точки B: ";
+	cin >> b1;
+	cout << "Введите 2-ую координату  точки B: ";
+	cin >> b2;
+	cout << "Введите 1-ую координату  точки C: ";
+	cin >> c1;
+	cout << "Введите 2-ую координату  точки C: ";
+	cin >> c2;
+	B1 = abs(a1 - b1);
+	B2 = abs(a2 - b2);
+	C1 = abs(a1 - c1);
+	C2 = abs(a2 - c2);
+	ab = sqrt(pow(B1, 2) + pow(B2, 2));
+	ac = sqrt(pow(C1, 2) + pow(C2, 2));
+	if (ab < ac)
+		cout << "В ближе к А; " << ab;
+	else if (ab > ac)
+		cout << "C ближе к А; " << ac;
+	else
+		cout << "Точки равноудалены от А";
+}*/
+
+
+
+/*int main() {
+	//задание 4
+	setlocale(LC_ALL, "Russian");
+	int x, y;
+	cout << "Введите координату Х: ";
+	cin >> x;
+	cout << "Введите координату Y: "; 
+	cin >> y;
+
+	if (x > 0 && y > 0) {
+		cout << "Точка лежит в первой четверти";
+	}
+	else if (x < 0 && y>0) {
+		cout << "Точка лежит во второй четверти";
+	}
+	else if (x < 0 && y < 0) {
+		cout << "Точка лежит в третьей четверти";
+	}
+	else if (x > 0 && y < 0) {
+		cout << "Точка лежит в четвертой четверти";
+	}
+	else {
+		cout << "Х или У, лежит на осях";
+	}
+}*/
+
+/*int main() {
+	//задание 5
+	setlocale(LC_ALL, "Russian");
+	int a;
+	cout << "Введите число: ";
+	cin >> a;
+	if (a == 0)
+		cout << "Нулевое";
+	else {
+		if (a > 0) 
+			cout << "Положительное ";
+		else 
+			cout << "Отрицательное ";
+		if ((a % 2) == 0) 
+			cout<< "чётное";
+		else 
+			cout << "нечётное ";
+	}
+	cout << "число";
+
+}*/
+
+/*int main() {
+	//задание 6
+	setlocale(LC_ALL, "Russian");
+	int a;
+
+	cout << "Введите число в диапозоне: 1-999  ";
+	cin >> a;
+
+	if (a % 2 == 0);
+	else cout << "не";
+	cout << "четное " << endl;
+	if (a / 100 > 0 && a / 100 < 10) cout << "трехзначное ";
+	else if (a / 10 > 0 && a / 10 < 10) cout << "двузначное ";
+	else if (a / 10 == 0) cout << "однозначное ";
+}*/
