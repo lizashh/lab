@@ -1,0 +1,78 @@
+#include <iostream>
+using namespace std;
+
+//задание1 
+/*int main() {
+	setlocale(LC_ALL, "Rus");
+	float c, m;
+	cout << "Введите стоимость за 1кг конфет: ";
+	cin >> c;
+	cout << "Стоимость конфет: " << endl;
+	for (m = 0.1; m < 1.1; m += 0.1)
+		cout << m << " кг = " << c * m << endl;
+}*/
+
+//задание 2
+/*int main() {
+	setlocale(LC_ALL, "Rus");
+	int N, i;
+	double p = 1;
+	cout << "Введите N: ";
+	cin >> N;
+	for ( i = 1; i <= N; i++) {
+		p = p * (1 + 0.1 * i);
+	}
+	cout << "Результат = " << p;
+	return 0;
+}*/
+
+//задание 3
+/*int main() {
+	setlocale(LC_ALL, "Rus");
+	int n;
+	cout << "Введите N: ";
+	cin >> n;
+    int rez = 0;
+	int a;
+	for (a = 1; a <= (2 * n - 1); a += 2) {
+		rez += a;
+		cout << rez << endl;
+	
+		}
+}*/
+
+//задание 4
+/*int main() {
+	setlocale(LC_ALL, "Rus");
+	int a, n;
+	cout << "Введите число А:";
+	cin >> a;
+    cout << "Введите число N:";
+	cin >> n;
+    float a2 = 1, rez = 1;
+	int i;
+    for (i = 2; i <= n+1; ++i)
+	{
+		a2 *= a;
+		rez += a2;
+	}
+	cout <<"Результат: "<< rez;
+}*/
+
+//задание 5
+/*int main() {
+	setlocale(LC_ALL, "Rus");
+	int a, n;
+	cout << "Введите A:";
+	cin >> a;
+	cout << "Введите N:";
+	cin >> n;
+    float a2 = 1, rez = 1;
+	int i;
+    for (i = 2; i <= n+1; ++i)
+	{
+		a2 *= -a;
+		rez += a2;
+	}
+	cout << "Результат: "<<rez;
+}*/
