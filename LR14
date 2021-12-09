@@ -1,0 +1,104 @@
+#include <iostream>
+using namespace std;
+
+//задание1
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int A, B, i, i2;
+	cout << "Введите значения А и В (А<B)" << endl;
+	cout << "A=";
+	cin >> A;
+	cout << "B=";
+	cin >> B;
+	for(i = A; i <= B; i++)
+		for(i2 = 1; i2 <= i; i2++)
+		cout << i << endl;
+}
+
+//задание2
+/*int main()
+ {
+	setlocale(LC_ALL, "Rus");
+	int A, B, a;
+	cout << "Введите значения А и В (A>B)" << endl;
+	cout << "A=";
+	cin >> A;
+	cout << "B=";
+	cin >> B;
+	while (A >= B)
+		A = A - B;
+	cout << "Длина незанятой части отрезка А равна: " << A;
+}*/
+
+//задание3
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int N;
+	cout << "Введите N: ";
+	cin >> N;
+	int K = 0;
+	int s = 0;
+	while (s < N)
+	{
+		K++;
+		s += K;
+	}
+	cout << "Наименьшее число равно: " << K << endl;
+	cout << "Сумма равна: " << s << endl;
+}
+//задание4
+/*int main()
+{
+	setlocale(LC_ALL, "Rus");
+	double p, s = 1000;
+	int k = 0;
+	cout << "Введите процент, под который был положен вклад (0<P<25): " << endl;
+	cin >> p;
+	while (s <= 1100)
+	{
+		k++;
+		s = s + s * p / 100;
+	}
+	cout << "Размер вклада превысит 1100 рублей через " << k << " месяца"<<endl;
+	cout << "Вклад будет равен " << s << "рублей";
+}*/
+
+//задание5
+/*int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b;
+	cout << "Введите значения A и B: " << endl;
+	cout << "A= ";
+	cin >> a;
+	cout << "B= ";
+	cin >> b;
+	while (a != b) {
+		if (a > b) {
+			a = a - b;
+		}
+		else {
+			b = b - a;
+		}
+	}
+	cout <<"НОД = " << a;
+}*/
+
+//задание6
+/*int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int n, f1 = 0, f2 = 1, f = 0, k = 0;
+	cout << "Введите значение N:";
+	cin >> n;
+	while (f <= n) {
+		f = f1 + f2;
+		f2 = f1;
+		f1 = f;
+		k++;
+	}
+	cout <<"Порядковый номер числа Фибоначчи N: "<< k;
+}*/
+
