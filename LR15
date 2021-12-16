@@ -1,0 +1,125 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+
+//задание 1
+
+void PowerA3(double A, double& B)
+{
+	B = A * A * A;
+
+}
+
+//задание 2
+
+int Sign(float x1)
+{
+	if (x1 < 0)
+	{
+		return -1;
+	}
+	else if (x1 == 0)
+	{
+		return 0;
+	}
+	else if (x1 > 0)
+	{
+		return 1;
+	}
+
+}
+
+//задание 3
+
+float RingS(float R1, float R2)
+{
+	return 3.14 * abs(R2 * R2 - R1 * R1);
+}
+
+//задание 4
+int Quarter(float x, float y)
+{
+	if (x > 0 && y > 0) {
+		return 1;
+	}
+	if (x < 0 && y > 0) {
+		return 2;
+	}
+	if (x < 0 && y < 0) {
+		return 3;
+
+	}
+	if (x > 0 && y < 0) {
+		return 4;
+	}
+}
+
+//задание 5
+float Fact2(int n)
+{
+	int k = 1;
+	while (n > 0) {
+		k *= n;
+		n -= 2;
+	}
+	return k;
+}
+
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+
+	//задание 1
+
+	cout << "Дана функция PowerA3, вычисляющиая третью степень числа. Введите 5 чисел, чтобы вычислить их третью степень" << endl;
+	double c, d;
+	for (int i = 1; i <= 5; i++)
+	{
+		cin >> c;
+		PowerA3(c, d);
+		cout << "3-я степень числа " << c << " равна " << d << endl;
+		cout << endl;
+	}
+
+	//задание 2
+
+	cout << "Дана функция Sign(x), возвращающая значения -1, 0 и 1." << endl;
+	cout << "Введите аргументы А и В, чтобы высчитать Sign(A) + Sign (B)" << endl;
+	float a1, b1, c1;
+	cin >> a1 >> b1;
+	c1 = Sign(a1) + Sign(b1);
+	cout << "Значение выражения равно: " << c1 << endl;
+	cout << endl;
+
+	//задание 3
+
+	cout << "Дана функция RingS, вычисляющая площадь кольца, исходя из данных радиусов R1 и R2" << endl;
+	float r1, r2;
+	for (int i = 0; i < 3; i++)
+	{
+		cout << "Введите значения R1 и R2: ";
+		cin >> r1 >> r2;
+		cout << "Радиус кольца равен: " << RingS(r1, r2) << endl;
+		cout << endl;
+	}
+
+	//задание 4
+	cout << "Дана функция Quarter(x, y), вычисляющая положение точки в координатных четвертях по ее координатам." << endl;
+	float x1, y1;
+	for (int i = 0; i < 3; i++)
+	{
+		cout << "Введите координаты х и y: ";
+		cin >> x1 >> y1;
+		cout << "Точка лежит в " << Quarter(x1, y1) << " координатной четверти." << endl;
+		cout << endl;
+	}
+
+	//задание 5
+	cout << "Дана функция Fact2(N), вычисляющая двойной факториал. " << endl;
+	cout << "Введите значение N: ";
+	int N;
+	cin >> N;
+	cout << "Двойной факториал равен: " << Fact2(N);
+}
