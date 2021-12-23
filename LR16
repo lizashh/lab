@@ -1,0 +1,108 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+
+	//задание 1
+	cout << "Введите N:";
+	int n;
+	cin >> n;
+	int arr[100];
+	for (int i = 0; i < n; i++) {
+		arr[i] = i * 2 + 1;
+	}
+	for (int i = 0; i < n; i++) {
+		cout << "array[" << i << "] = " << arr[i] << endl;
+	}
+	cout << endl;
+
+	//задание 2
+	
+	cout << "Введите значения N, A, D: ";
+	int n1, a, d;
+	cin >> n1 >> a >> d;
+	int ar[100];
+	ar[0] = a;
+	int k = 1;
+	for (int i = 0; i < n1; i++) {
+		ar[i] = ar[0] * k;
+		k *= d;
+		cout << "array [" << i << "]= " << ar[i] << endl;
+	}
+	cout << endl;
+
+	//задание 3
+	
+	
+	cout << "Введите N, A и B: ";
+	int n2;
+	int array[100];
+	cin >> n2;
+	cin >> array[0];
+	cin >> array[1];
+	array[2] = array[0] + array[1];
+	for (int i = 3; i < n2; i++) {
+		array[i] = array[i - 1] * 2;
+	}
+	for (int i = 0; i < n2; i++) {
+		cout << "array[" << i << "] = " << array[i] << endl;
+	}
+	cout << endl;
+
+	//задание 4
+	
+	int array1[100];
+	int t, v = 0, h;
+	
+	cout << "Введите размер массива: " << endl;
+	cin >> t;
+	cout << "Введите массив: " << endl;
+	for (int i = 0; i < t; i++) {
+		cin >> array1[i];
+	}
+	h = t - 1;
+	for (int i = 0; i < t; i++) {
+		while (v <= h) {
+			cout << "array[" << i << "]= " << array1[v] << " " << endl;
+			i++;
+			if (v == h)
+				break;
+			cout << "array[" << i << "]= " << array1[h] << " " << endl;
+			i++;
+			v++;
+			h--;
+		}
+	}
+	cout << endl;
+
+	//задание 5
+	
+
+	cout << "Введите размер массива: " << endl;
+	int N1;
+	int arry[100];
+	cin >> N1;
+	cout << "Введите массив: " << endl;
+	for (int i = 0; i < N1; i++) {
+		cin >> arry[i];
+	}
+	cout << endl;
+
+	for (int y = 1; y < N1; y += 2) {
+		cout << arry[y] << " ";
+	}
+	if (N1 % 2 == 0) {
+		for (int g = (N1 - 2); g >= 0; g -= 2) {
+			cout << arry[g] << " ";
+		}
+	}
+	else {
+		for (int g = (N1 - 1); g >= 0; g -= 2) {
+			cout << arry[g] << " ";
+		}
+	}
+
+}
